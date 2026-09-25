@@ -23,6 +23,10 @@
     box-shadow:0 15px 30px rgba(0,0,0,.15);
 }
 
+.event-top {
+    position: relative;
+}
+
 .event-category{
     background: #2563eb;
     color: white;
@@ -114,3 +118,27 @@
 .delete-btn:hover{
     background:#b91c1c;
 }
+
+.event-ended {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #555;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.event-upcoming {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #16a34a;
+    color: white;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+

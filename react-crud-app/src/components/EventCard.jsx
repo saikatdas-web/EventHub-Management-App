@@ -10,6 +10,9 @@ function EventCard ({event, onEdit, onDelete,}) {
         year: "numeric",
     });
 
+    const isEnded = new Date(event.eventDate) < new Date();
+    const isUpcoming = new Date(event.eventDate) > new Date();
+
     return (
         <div className="event-card">
 
@@ -22,7 +25,17 @@ function EventCard ({event, onEdit, onDelete,}) {
                 alt={event.title}
                 /> 
 
-                <span className="event-category"> {event.category} </span>
+               <span className="event-category"> {event.category} </span>
+
+                {isEnded && (
+                    <span className="event-ended"> Ended </span>
+                )
+                }
+
+                {isUpcoming && (
+                    <span className="event-upcoming"> Upcoming </span>
+                ) 
+                }
             
             </div>
 

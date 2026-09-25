@@ -1,5 +1,5 @@
 import React from "react";
-import { LayoutDashboard, PlusCircle, LogOut } from "lucide-react";
+import { LayoutDashboard, LogOut } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import "../styles/Navbar.css";
 
